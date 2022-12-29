@@ -23,6 +23,9 @@ import { EditSkillComponent } from './componentes/skills-hs/edit-skill.component
 import { NewSkillComponent } from './componentes/skills-hs/new-skill.component';
 import { NewProyectoComponent } from './componentes/proyectos/new-proyecto.component';
 import { EditPersonaComponent } from './componentes/encabezado/edit-persona.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +51,9 @@ import { EditPersonaComponent } from './componentes/encabezado/edit-persona.comp
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorProvider
