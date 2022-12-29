@@ -1,0 +1,107 @@
+<nav class="navbar navbar-dark bg-dark p-2 text-white bg-opacity-75 navColor">
+  <div class="container-fluid">
+    <a class="navbar-brand" target="_blank"
+      href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><img
+        class="border border-3 rounded-circle arg-imgp" src="./assets/iconos/ArgePro.ico" alt="" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+      aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+      aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+          Developer Carlos E. Rodriguez
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="" >HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank"
+              href="https://www.w3schools.com/whatis/whatis_fullstack.asp#:~:text=A%20full%20stack%20web%20developer,ASP%2C%20Python%2C%20or%20Node)">¿Que
+              es ser Full Stack Web Developer?<i class="fa-solid fa-laptop-code m-lg-3"></i></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contacto y Redes Sociales
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark justify-content-center">
+              <li>
+                <a class="dropdown-item" target="_blank" href="
+
+https://wa.me/+543844418268?text=Hola,%20me%20Carlos%20Rodriguez%20soy%20full%20stack%20developer%20y%20estoy%20para%20ayudarte!!!
+"><i class="fa-brands fa-whatsapp m-lg-2"></i>whatsapp</a><span><img class="bg-white d-block m-auto"
+                    src="./assets/iconos/qrcode-1658563456068.png" width="100px" height="100px" alt="" /></span>
+              </li>
+              <li>
+                <a class="dropdown-item" target="_blank"
+                  href="https://www.linkedin.com/in/carlos-rodriguez-developerwebjr/"><i
+                    class="fa-brands fa-linkedin m-lg-2"></i>Linkedin</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" target="_blank" href="https://m.facebook.com/login/?locale=es_ES"><i
+                    class="fa-brands fa-facebook m-lg-2"></i>Facebook</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<header>
+
+<!---->
+<section style="background-image: linear-gradient(to top, #FFFFFF,#0e6251, #8aacbb, #FFFFFF, #ffffff);margin-top: 40px;">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <!--py-5-->
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body pt-1 text-center">
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+
+              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-5">Ingrese su usuario y password</p>
+
+              <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="text" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required/>
+                  <label class="form-label" for="nombreUsuario">Usuario</label>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password" required />
+                  <label class="form-label" for="password">Password</label>
+                </div>
+
+                <!--<p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>-->
+
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+              </form>
+
+            </div>
+
+            <div>
+              <p class="mb-0">¿No tienes una cuenta? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="fLog">
+  <img src="assets/iconos/APLogo-20-20.png" width="100px" height="100px">
+  <p class="copyright">© Copyright Argentina Programa -2022</p>
+  <p class="copyright">Portfolioweb-Carlos E. Rodriguez FSDjr.</p>
+</footer>

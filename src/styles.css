@@ -1,0 +1,206 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Stint+Ultra+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Righteous&family=Stint+Ultra+Condensed&display=swap");
+body{
+  margin-top: -15px;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  font-family: "Righteous", cursive;
+  padding: 1px;
+}
+
+.imagenBanner {
+  width: 100%;
+  height: auto;
+
+}
+
+.navColor {
+  width: 100%;
+  background: #0E6251 !important;
+}
+
+.img-foto {
+  position: relative;
+  margin-top: -90px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 2px solid #0E6251;
+  max-width: 130px;
+  height: 130px;
+}
+
+/*--bs-gutter-x: 0 ; evitar que salga del margen!!*/
+.masInfo {
+  position: relative;
+  height: auto;
+  margin-top: -40px;
+  margin-bottom: 10px;
+  --bs-gutter-x: 0;
+}
+
+.acercaDe {
+  border: 1px solid rgb(231, 225, 225);
+  margin-top: 2px;
+}
+
+.experienciaEdu {
+  border: 1px solid rgb(231, 225, 225);
+  margin-top: 2px;
+}
+
+.habilidadesDurasBlandas {
+  border: 1px solid rgb(231, 225, 225);
+  margin-top: 2px;
+  padding-bottom: 20px;
+
+}
+
+.proyectos {
+  border: 1px solid rgb(231, 225, 225);
+  margin-top: 2px;
+
+}
+
+.nombre {
+  margin-top: 40px;
+  margin-left: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2em;
+}
+
+.logoProfesorado {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 60px;
+
+}
+
+.arg-imgp {
+  max-width: 80px;
+  height: 80px;
+}
+
+@media only screen and (max-width: 945px) {
+  .contenedorImg {
+    display: none
+      /*!important*/
+    ;
+  }
+
+  .img-foto {
+    max-width: 100px;
+    height: 100px;
+  }
+
+  .arg-imgp {
+    max-width: 70px;
+    height: 70px;
+  }
+
+  .editFoto {
+    margin-left: 90px !important;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .nombre {
+    margin-left: 75px;
+    text-align: center;
+  }
+}
+
+/*@media only screen and (max-width:500){
+.acercaDe{
+  height: 500px;
+}
+}*/
+@media only screen and (max-width: 420px) {
+  .arg-imgp {
+    max-width: 50px;
+    height: 50px;
+  }
+
+  .img-foto {
+    max-width: 60px;
+    height: 60px;
+    margin-top: -50px;
+    margin-left: 10px;
+  }
+
+  .editFoto {
+    margin-left: 60px !important;
+    margin-top: 20px;
+  }
+
+  .botonesEditMasInfo {
+    margin-left: 45px !important;
+  }
+}
+
+h6:not(.tituloStack) {
+  font-family: "Jura", sans-serif;
+  margin-top: -10px;
+  margin-left: 15px;
+  color: grey;
+}
+
+.tituloStack {
+  margin-left: 15px;
+}
+
+.parrafo1 {
+  margin-left: 15px;
+}
+
+.botonesEditMasInfo {
+  margin-left: 15px;
+}
+
+.infoContacto {
+  text-decoration: none;
+}
+
+.editFoto {
+  position: absolute;
+  margin-left: 140px;
+}
+
+.icoAcercaDe {
+  display: flex;
+  align-items: flex-start;
+  padding: 7px;
+}
+
+.acercaDe p {
+  font-family: "Jura", sans-serif;
+  text-align: justify;
+  color: grey;
+}
+
+.parrafoProyecto {
+  font-family: "Jura", sans-serif;
+  text-align: justify;
+  color: grey;
+}
+
+button {
+  border: none;
+  background: #fff;
+}
+footer {
+  text-align: center;
+  background: #0E6251;
+  padding: 20px;
+}
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px;
+}

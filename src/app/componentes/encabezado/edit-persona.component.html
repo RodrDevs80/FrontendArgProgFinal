@@ -1,0 +1,50 @@
+<section style="background-image: linear-gradient(to top, #FFFFFF,#0e6251, #8aacbb, #FFFFFF, #ffffff);">
+  <div class="container"  *ngIf="persona" >
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well well-sm">
+          <form class="form-horizontal" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <fieldset>
+              <legend class="text-center header">Persona a modificar</legend>
+              <div class="form-group">
+                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-industry"></i></span>
+                <div class="col-md-8" style="width: 100%;">
+                  <input id="nombre" name="nombre" type="text" placeholder="Nombre de la Persona"
+                    class="form-control" [(ngModel)]="persona.nombre" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-industry"></i></span>
+                <div class="col-md-8" style="width: 100%;">
+                  <input id="apellido" name="apellido" type="text" placeholder="Apellido de la Persona"
+                    class="form-control" [(ngModel)]="persona.apellido" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-pen-to-square"></i></span>
+                <div class="col-md-8" style="width: 100%;">
+                  <input id="descripcion" name="descripcion" type="text"
+                    placeholder="Descripción" class="form-control" [(ngModel)]="persona.descripcion"
+                    required>
+                </div>
+                <div class="form-group">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-industry"></i></span>
+                  <div class="col-md-8" style="width: 100%;">
+                    <input id="img" name="img" type="file" placeholder="Imagen de la Persona"
+                      class="form-control" [(ngModel)]="persona.img" (change)="uploadimage($event)" accept=".jpg, .jpeg, .png">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-12 text-center" style="margin-top:30px ;">
+                  <button type="submit" class="btn btn-dark btn-lg">Modificar Persona</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,42 @@
+<section style="background-image: linear-gradient(to top, #FFFFFF,#0e6251, #8aacbb, #FFFFFF, #ffffff);width: 100%;height: 100%;" *ngIf="proyecto">
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well well-sm">
+          <form class="form-horizontal" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <fieldset>
+              <legend class="text-center header">Modifique el Proyecto</legend>
+              <div class="form-group">
+                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-sharp fa-solid fa-list-check"></i></span>
+                <div class="col-md-8" style="width: 100%;">
+                  <input id="nombreP" name="nombreP" type="text" placeholder="Nombre del Proyecto"
+                    class="form-control" [(ngModel)]="proyecto.nombreP" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <span class="col-md-1 text-center"><i class="fa-solid fa-pen-to-square"></i></span>
+                <div class="col-md-8" style="width: 100%;">
+                  <input id="descripcionP" name="descripcionP" type="text"
+                    placeholder="Descripción del Proyecto" class="form-control" [(ngModel)]="proyecto.descripcionP"
+                    required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-12 text-center" style="margin-top:30px ;">
+                  <button type="submit" class="btn btn-dark btn-lg">Modificar Proyecto</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+

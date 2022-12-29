@@ -1,0 +1,90 @@
+<nav class="navbar navbar-dark bg-dark p-2 text-white bg-opacity-75 navColor">
+  <div class="container-fluid">
+    <a class="navbar-brand" target="_blank"
+      href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><img
+        class="border border-3 rounded-circle arg-imgp" src="./assets/iconos/ArgePro.ico" alt="" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+      aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+      aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+          Developer Carlos E. Rodriguez
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/login" *ngIf="!isLogged">LOGIN</a>
+            <a class="nav-link active" style="cursor: pointer;" aria-current="page" (click)="onLogOut()" *ngIf="isLogged">LOGOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank"
+              href="https://www.w3schools.com/whatis/whatis_fullstack.asp#:~:text=A%20full%20stack%20web%20developer,ASP%2C%20Python%2C%20or%20Node)">¿Que
+              es ser Full Stack Web Developer?<i class="fa-solid fa-laptop-code m-lg-3"></i></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contacto y Redes Sociales
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark justify-content-center">
+              <li>
+                <a class="dropdown-item" target="_blank" href="
+
+https://wa.me/+543844418268?text=Hola,%20me%20Carlos%20Rodriguez%20soy%20full%20stack%20developer%20y%20estoy%20para%20ayudarte!!!
+"><i class="fa-brands fa-whatsapp m-lg-2"></i>whatsapp</a><span><img class="bg-white d-block m-auto"
+                    src="./assets/iconos/qrcode-1658563456068.png" width="100px" height="100px" alt="" /></span>
+              </li>
+              <li>
+                <a class="dropdown-item" target="_blank"
+                  href="https://www.linkedin.com/in/carlos-rodriguez-developerwebjr/"><i
+                    class="fa-brands fa-linkedin m-lg-2"></i>Linkedin</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" target="_blank" href="https://m.facebook.com/login/?locale=es_ES"><i
+                    class="fa-brands fa-facebook m-lg-2"></i>Facebook</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<header>
+  <div>
+    <img class="imagenBanner" src="./assets/iconos/Dimensiones personalizadas 1300x550 px.jpeg" alt="" />
+  </div>
+  <span><img style="z-index: 1;" class="img-foto img-thumbnail" [src]="pers.img" alt="" /> </span>
+</header>
+<!--mas info-->
+<section class="row masInfo">
+
+  <div class="col-10">
+    <button class="editFoto" *ngIf="isLogged" style="z-index: 0;" routerLink="/editper/{{pers.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+    <h1 class="nombre">{{pers.nombre}} {{pers.apellido}}</h1>
+    <h6 class="tituloStack"><strong>Full Stack Developer Jr.</strong></h6>
+    <h6>Técnico en Reparación de PC y Redes</h6>
+    <h6>Profesor de Historia en el I.S.F.D.C.N°1</h6>
+    <p class="parrafo1">
+      Santigo Del Estero-Añatuya-(Argentina)
+      <!--
+      <a class="infoContacto" href="#">Información de contacto</a>
+    </p>
+    <div class="btn-group botonesEditMasInfo">
+      <a href="#" class="btn btn-primary active" aria-current="page">Tengo interés en</a>
+      <a href="#" class="btn btn-outline-primary">Añadir sección</a>
+      <a href="#" class="btn btn-outline-primary">Mas</a>
+    </div>
+  -->
+  </div>
+  <div class="col-2 contenedorImg">
+    <img class="logoProfesorado" src="./assets/iconos/profesorado.jpeg" alt="" />
+  </div>
+
+</section>
+<!--fin mas info-->

@@ -1,0 +1,41 @@
+
+<section style="background-image: linear-gradient(to top, #FFFFFF,#0e6251, #8aacbb, #FFFFFF, #ffffff);">
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well well-sm">
+          <form class="form-horizontal" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <fieldset>
+              <legend class="text-center header">Agrege una nueva experiencia</legend>
+              <div class="form-group">
+                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-industry"></i></span>
+                <div class="col-md-8" style="width: 100%;">
+                  <input id="nombreE" name="nombreE" type="text" placeholder="Nombre de la empresa o institución"
+                    class="form-control" [(ngModel)]="nombreE" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-pen-to-square"></i></span>
+                <div class="col-md-8" style="width: 100%;">
+                  <input id="descripcionE" name="descripcionE" type="text"
+                    placeholder="Descripción de las tareas realizadas" class="form-control" [(ngModel)]="descripcionE"
+                    required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-12 text-center" style="margin-top:30px ;">
+                  <button type="submit" class="btn btn-dark btn-lg">Agregar Experiencia</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+

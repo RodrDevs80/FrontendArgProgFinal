@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-11">
+      <h3>Educación</h3>
+    </div>
+    <div class="col-1">
+      <span class="iconoCruz"><button routerLink="/nuevaedu" *ngIf="isLogged"><i
+            class="fa-solid fa-plus "></i></button></span>
+    </div>
+  </div>
+  <!--aqui comienza-->
+  <div class="container text-center" *ngFor="let edu of educacion">
+    <div class="row">
+      <div class="col-2">
+        <span><img class="img-fluid" src="assets/iconos/logoEduF.png" width="50px" height="50px" alt=""></span>
+      </div>
+      <div class="col-9">
+        <h5>{{edu.nombreE}}</h5>
+      </div>
+      <div class="col-1">
+        <span><button *ngIf="isLogged" routerLink="/editedu/{{edu.id}}"><i
+              class="fa-solid fa-pen lapiz"></i></button></span>
+        <span><button *ngIf="isLogged" (click)="delete(edu.id)"><i
+              class="fa-solid fa-trash-can basura"></i></button></span>
+        <span *ngIf="!isLogged"><i class="fa-solid fa-graduation-cap"></i></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+      </div>
+      <div class="col-9">
+        <h6>{{edu.descripcionE}}</h6>
+      </div>
+      <div class="col-1">
+      </div>
+    </div>
+  </div>
+</div>
